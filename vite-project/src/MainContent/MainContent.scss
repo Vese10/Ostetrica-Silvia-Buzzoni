@@ -4,30 +4,50 @@
   box-sizing: border-box;
 }
 
+$primary-color: #EF7886;
+$secondary-color: #733930;
+$third-color: #ffd9dd;
+$fourth-color: #fcbdc3;
+
 .main-page {
   display: flex;
+  flex-direction: column;
   background-color: #dad7d7;
   height: cover;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.background-image {
-  position: fixed;
+.background-image,
+.background-image-2 {
+  position: absolute;
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.presentation { 
+.presentation,
+.about-me { 
   position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  padding: 20px; 
+  height: 100%;
   z-index: 1;
+}
+
+.first-page,
+.second-page { 
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-bottom: 2px solid $primary-color;
 }
 
 .title {
@@ -38,14 +58,40 @@
 
 .sub-title {
   font-size: 20px;
+  padding: 10px;
 }
 
 .first-video {
-  margin-top: 20px;  
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.about-me-title {
+  padding-top: 10px,
+}
+
+.about-me-text {
+  font-size: 20px;
+  padding: 10px;
 }
 
 @media (min-width: 450px){
 
+  .background-image-2 {
+    object-position: 0px 40%;
+  }
+
+  .about-me {
+    min-height: 600px;  
+  }
+
+  .about-me-title {
+    font-size: 50px;
+  }
+
+  .about-me-text {
+    font-size: 30px;  
+  }
 }
 
 @media (max-width: 450px) {
