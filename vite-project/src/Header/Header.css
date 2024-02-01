@@ -78,11 +78,15 @@
   .nav-items.menu-open > li {
     list-style-type: none;
     color: #733930;
-    font-size: 40px;
+    font-size: 35px;
     width: cover;
     cursor: pointer;
+    padding: 10px;
   }
   .nav-items.menu-open > li:hover {
     background-color: #EF7886;
+  }
+  .nav-items.menu-open > li:active {
+    background-color: #fcbdc3;
   }
 }/*# sourceMappingURL=Header.css.map */
