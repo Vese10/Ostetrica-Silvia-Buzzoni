@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["MainContent.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;;;AAGF;EACE","sourcesContent":["* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.main-page {\r\n  background-image: url(../assets/ost-logo-back.png);\r\n}"]}

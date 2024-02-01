@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffd9dd;
+}
+
+.left-section {
+  display: flex;
+}
+
+.nav-logo {
+  width: 100px;
+}
+
+.right-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  color: #733930;
+}
+
+.nav-items > li {
+  padding: 5px;
+}/*# sourceMappingURL=Header.css.map */

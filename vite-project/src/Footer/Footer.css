@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  display: flex;
+  background-color: #dcdada;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  font-size: 20px;
+  width: 100%;
+  justify-content: center;
+}/*# sourceMappingURL=Footer.css.map */

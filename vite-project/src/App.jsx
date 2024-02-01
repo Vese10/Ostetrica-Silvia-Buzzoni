@@ -1,3 +1,6 @@
+import Header from './Header/Header'
+import Footer from './Footer/Footer'
+import MainContent from './MainContent/MainContent'
 import './App.css'
 
 function App() {
@@ -5,7 +8,9 @@ function App() {
   return (
     <>
       <div>
-        
+        <Header />
+        <Footer />
+        <MainContent />
       </div>
     </>
   )
