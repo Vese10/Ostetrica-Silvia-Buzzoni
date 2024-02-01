@@ -3,9 +3,9 @@ import './MainContent.css'
 
 function MainContent(){
   return(
-    <div className="main-page">
+    <article className="main-page">
       <img src={backgroundImage} className='background-image' alt='Baby feets black and white' />
-    </div>
+    </article>
   )
 }
 

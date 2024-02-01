@@ -6,6 +6,7 @@
 
 $primary-color: #EF7886;
 $secondary-color: #733930;
+$third-color: #ffd9dd;
 
 .nav {
   display: flex;
@@ -14,7 +15,7 @@ $secondary-color: #733930;
   position: fixed;
   z-index: 2;
   width: 100%;
-  background-color: #ffd9dd;
+  background-color: $third-color;
 }
 
 .left-section {
@@ -31,12 +32,44 @@ $secondary-color: #733930;
   align-items: center;  
 }
 
-.nav-items {
-  list-style: none;
-  display: flex;
-  color: $secondary-color;
+@media (min-width: 450px){
+  .nav-items {
+    list-style: none;
+    display: flex;
+    color: $secondary-color;
+  }
+
+  .nav-items > li {
+    padding: 5px;
+  }
 }
 
-.nav-items > li {
-  padding: 5px;
+.hamburger-menu{
+  display: none;  
+}
+
+.hamburger-btn {
+  display: none;  
+}
+
+@media (max-width: 450px){
+  .hamburger-menu{
+    display: flex;
+    width: 80px;
+    padding: 15px;
+  }
+
+  .hamburger-menu:hover {
+    cursor: pointer;  
+  }
+
+  .hamburger-btn {
+    display: flex;
+    border: none;
+    background-color: $third-color;
+  }
+
+  .nav-items {
+    display: none;
+  }
 }

@@ -1,5 +1,10 @@
 import ostLogo from '../assets/ost-logo-back.png'
+import hamburgerMenu from '../assets/hamburger-menu.png'
 import './Header.css'
+
+function handleClick(){
+  alert('ciao');
+}
 
 function Header(){
   return (
@@ -10,6 +15,9 @@ function Header(){
           <p className="ost-name">Ostetrica <br/> Silvia <br/> Buzzoni</p>
         </div>
         <div className="left-section">
+          <button className='hamburger-btn' id='hamburger-btn' onClick={handleClick}>
+            <img src={hamburgerMenu} className='hamburger-menu' alt='hamburger menu image' />
+          </button>
           <ul className="nav-items">
             <li>Home</li>
             <li>Servizi</li>
