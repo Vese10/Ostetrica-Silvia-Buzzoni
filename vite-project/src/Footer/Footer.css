@@ -8,9 +8,10 @@
   display: flex;
   background-color: #dcdada;
   padding: 10px 0;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   font-size: 20px;
   width: 100%;
   justify-content: center;
+  z-index: 2;
 }/*# sourceMappingURL=Footer.css.map */
