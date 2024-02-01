@@ -10,7 +10,7 @@ function MainContent(){
       <div className='presentation'>
         <h1 className='title'>Ostetrica Silvia Buzzoni <br/> Libera Professionisa a Ferrara</h1>
         <p className='sub-title'>Prendersi cura. Della donna, della madre, dei bimbi</p>
-        <ReactPlayer url={firstVideo} controls={true} className='first-video' />
+        <ReactPlayer url={firstVideo} width='300' controls={true} autoplay={true} className='first-video' />
       </div>
     </article>
   )
