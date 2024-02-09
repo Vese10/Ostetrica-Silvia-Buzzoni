@@ -11,12 +11,12 @@ function MainContent(){
         <div className='presentation'>
           <h1 className='title'>Ostetrica Silvia Buzzoni <br/> Libera Professionisa a Ferrara</h1>
           <p className='sub-title'>Prendersi cura. Della donna, della madre, dei bimbi</p>
-        </div>
-        <div className='cards'>
-          <Card img='' title=''></Card>
-          <Card img='' title=''></Card>
-          <Card img='' title=''></Card>
-          <Card img='' title=''></Card>
+          <div className='cards'>
+            <Card img='' title='Ciao'></Card>
+            <Card img='' title='Ciao'></Card>
+            <Card img='' title='Ciao'></Card>
+            <Card img='' title='Ciao'></Card>
+          </div>
         </div>
       </div>
       <div className='second-page'>

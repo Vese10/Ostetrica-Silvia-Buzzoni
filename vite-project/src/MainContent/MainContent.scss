@@ -61,6 +61,16 @@ $fourth-color: #fcbdc3;
   padding: 10px;
 }
 
+.cards {
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
 .about-me-title {
   padding-top: 10px,
 }
