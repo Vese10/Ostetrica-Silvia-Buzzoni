@@ -53,6 +53,9 @@
     cursor: pointer;
     background-color: #EF7886;
   }
+  .nav-items > li:active {
+    background-color: #fcbdc3;
+  }
 }
 @media (max-width: 450px) {
   .hamburger-menu {

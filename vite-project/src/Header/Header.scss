@@ -60,6 +60,10 @@ $fourth-color: #fcbdc3;
     cursor: pointer;
     background-color: $primary-color;  
   }
+
+  .nav-items > li:active {
+    background-color: $fourth-color;
+  }
 }
 
 @media (max-width: 450px){
