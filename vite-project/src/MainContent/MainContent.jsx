@@ -1,6 +1,7 @@
 import backgroundImage from '../assets/background-logo.png'
 import backgroundImage2 from '../assets/second-page-backgrond-image.jpg'
 import './MainContent.css'
+import Card from './Card/Card'
 
 function MainContent(){
   return(
@@ -10,6 +11,12 @@ function MainContent(){
         <div className='presentation'>
           <h1 className='title'>Ostetrica Silvia Buzzoni <br/> Libera Professionisa a Ferrara</h1>
           <p className='sub-title'>Prendersi cura. Della donna, della madre, dei bimbi</p>
+        </div>
+        <div className='cards'>
+          <Card img='' title=''></Card>
+          <Card img='' title=''></Card>
+          <Card img='' title=''></Card>
+          <Card img='' title=''></Card>
         </div>
       </div>
       <div className='second-page'>
