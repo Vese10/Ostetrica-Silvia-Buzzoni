@@ -62,7 +62,7 @@ $fourth-color: #fcbdc3;
 }
 
 .cards {
-  z-index: 1;
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
