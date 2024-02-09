@@ -2,7 +2,7 @@ import './Card.css'
 
 function Card({img, title}){
   const handleClick = () => {
-    window.scrollTo(0, 753.55)
+    window.scrollTo(0, 754)
   }
 
   return(
