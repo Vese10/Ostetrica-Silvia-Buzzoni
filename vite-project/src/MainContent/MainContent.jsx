@@ -1,5 +1,3 @@
-import ReactPlayer from 'react-player'
-import firstVideo from '../assets/first-video.mp4'
 import backgroundImage from '../assets/background-logo.png'
 import backgroundImage2 from '../assets/second-page-backgrond-image.jpg'
 import './MainContent.css'
@@ -12,7 +10,6 @@ function MainContent(){
         <div className='presentation'>
           <h1 className='title'>Ostetrica Silvia Buzzoni <br/> Libera Professionisa a Ferrara</h1>
           <p className='sub-title'>Prendersi cura. Della donna, della madre, dei bimbi</p>
-          <ReactPlayer url={firstVideo} width='300' controls={true} autoPlay={true} className='first-video' />
         </div>
       </div>
       <div className='second-page'>
