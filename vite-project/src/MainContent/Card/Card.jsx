@@ -1,12 +1,12 @@
 import './Card.css'
 
-function Card({img, title}){
-  const handleClick = () => {
-    window.scrollTo(0, 754)
+function Card({img, title, yOffset}){
+  const handleClick = (yOffset) => {
+    window.scrollTo(0, yOffset)
   }
 
   return(
-    <div className='card' onClick={handleClick}>
+    <div className='card' onClick={() => handleClick(yOffset)}>
       <img className='card-img' src={img} alt=''></img>
       <p className='card-title'>{title}</p>
     </div>

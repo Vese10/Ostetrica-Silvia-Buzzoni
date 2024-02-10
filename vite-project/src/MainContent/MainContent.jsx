@@ -12,7 +12,7 @@ function MainContent(){
           <h1 className='title'>Ostetrica Silvia Buzzoni <br/> Libera Professionisa a Ferrara</h1>
           <p className='sub-title'>Prendersi cura. Della donna, della madre, dei bimbi</p>
           <div className='cards'>
-            <Card img='https://ostetricasilviabuzzoni.files.wordpress.com/2021/11/home-2.jpg' title='Chi sono'></Card>
+            <Card img='https://ostetricasilviabuzzoni.files.wordpress.com/2021/11/home-2.jpg' title='Chi sono' yOffset='754'></Card>
             <Card img='https://ostetricasilviabuzzoni.files.wordpress.com/2021/11/home-1-e1637973689125.jpg' title='Servizi'></Card>
             <Card img='https://ostetricasilviabuzzoni.files.wordpress.com/2021/11/home-3.jpg' title='Dove mi trovo'></Card>
             <Card img='https://ostetricasilviabuzzoni.files.wordpress.com/2021/11/image_editor_output_image1729886649-1637980771457.jpg' title='Contatti'></Card>
