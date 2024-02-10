@@ -39,7 +39,8 @@ $fourth-color: #fcbdc3;
 }
 
 .first-page,
-.second-page { 
+.second-page,
+.third-page { 
   position: relative;
   display: flex;
   align-items: center;
@@ -48,6 +49,17 @@ $fourth-color: #fcbdc3;
   height: 83vh;
   z-index: 1;
   border-bottom: 3px solid $primary-color;
+}
+
+.services-cont {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0px;
+  width: 100vw;
+  height: 83vh;
+  background-color: $third-color;
 }
 
 .title {
@@ -99,8 +111,12 @@ $fourth-color: #fcbdc3;
   .about-me-text {
     max-width: 700px;
   }
+
 }
 
 @media (max-width: 450px) {
-  
+   .services-cont {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+  }
 }

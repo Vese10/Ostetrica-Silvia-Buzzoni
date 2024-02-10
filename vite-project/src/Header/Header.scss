@@ -16,7 +16,8 @@ $fourth-color: #fcbdc3;
   z-index: 2;
   width: 100%;
   background-color: $third-color;
-  position: fixed
+  position: fixed;
+  border-bottom: 2px solid $primary-color;
 }
 
 .right-section {

@@ -8,8 +8,8 @@ function Header(){
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
   }
-  const handleClickAbout = () => {
-    window.scrollTo(0, 753.55)
+  const handleClickAbout = ({height}) => {
+    window.scrollTo(0, {height})
   }
   return (
     <header>
@@ -25,8 +25,7 @@ function Header(){
           <ul className={`nav-items ${isMenuOpen ? 'menu-open' : ''}`}>
             <li>Home</li>
             <li>Servizi</li>
-            <li>Tariffario</li>
-            <li onClick={handleClickAbout}>About</li>
+            <li height='754' onClick={handleClickAbout}>About</li>
             <li>Contatti</li>
           </ul>
         </div>

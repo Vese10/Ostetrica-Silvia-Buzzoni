@@ -12,6 +12,7 @@
   width: 100%;
   background-color: #ffd9dd;
   position: fixed;
+  border-bottom: 2px solid #EF7886;
 }
 
 .right-section {

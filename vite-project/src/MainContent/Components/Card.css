@@ -6,11 +6,9 @@
 
 .card {
   position: relative;
-  background-color: aliceblue;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none;
 }
 
 .card:hover {
