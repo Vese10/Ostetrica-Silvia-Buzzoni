@@ -30,6 +30,7 @@ function MainContent(){
       <div className='third-page'>
         <div className='services-cont'>
           <div className='grids-3'>
+            <img className='img-servizi' src='https://ostetricasilviabuzzoni.files.wordpress.com/2021/11/home-1-e1637973689125.jpg' alt='Pancia'></img>
             <Services>Cura del Pavimento Pelvico</Services>
             <Services>Support all'allattamento</Services>
             <Services>Gravidanza</Services>
