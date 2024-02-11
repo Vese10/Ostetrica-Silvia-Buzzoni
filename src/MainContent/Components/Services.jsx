@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Services.css'
 
-function Services({children}){
+function Services({details, children}){
   const [showDiv, setShowDiv] = useState(false)
   const handleShowDiv = () => {
     setShowDiv(!showDiv);
@@ -11,8 +11,8 @@ function Services({children}){
     <div className='servizi-container'>
       <p className='servizi' onClick={handleShowDiv}>{children}</p>
       {showDiv && (
-        <div className='div-show'>
-          <p className='p-show'>Ciao</p>
+        <div className='div-show' onClick={handleShowDiv}>
+          <p className='p-show'>{details}</p>
         </div>
       )}
     </div>
