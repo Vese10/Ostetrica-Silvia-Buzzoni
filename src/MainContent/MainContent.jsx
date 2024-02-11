@@ -3,6 +3,7 @@ import backgroundImage2 from '../assets/second-page-backgrond-image.jpg'
 import './MainContent.css'
 import Card from './Components/Card'
 import Services from './Components/Services'
+import Prova from './Components/Prova'
 
 function MainContent(){
   return(
@@ -39,6 +40,9 @@ function MainContent(){
             <Services>Attività extra</Services>
           </div>
         </div>
+      </div>
+      <div className='fourth-page'>
+        <Prova></Prova>
       </div>
     </article>
   )
