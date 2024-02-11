@@ -29,12 +29,14 @@ function MainContent(){
       </div>
       <div className='third-page'>
         <div className='services-cont'>
-          <Services>Cura del Pavimento Pelvico</Services>
-          <Services>Support all'allattamento</Services>
-          <Services>Gravidanza</Services>
-          <Services>Accompagnamento in ospedale</Services>
-          <Services>Parto in casa</Services>
-          <Services>Attività extra</Services>
+          <div className='grids-3'>
+            <Services>Cura del Pavimento Pelvico</Services>
+            <Services>Support all'allattamento</Services>
+            <Services>Gravidanza</Services>
+            <Services>Accompagnamento in ospedale</Services>
+            <Services>Parto in casa</Services>
+            <Services>Attività extra</Services>
+          </div>
         </div>
       </div>
     </article>

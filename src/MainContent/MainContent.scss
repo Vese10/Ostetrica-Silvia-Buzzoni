@@ -28,7 +28,8 @@ $fourth-color: #fcbdc3;
 }
 
 .presentation,
-.about-me { 
+.about-me,
+.services-cont { 
   position: relative;
   display: flex;
   align-items: center;
@@ -51,17 +52,6 @@ $fourth-color: #fcbdc3;
   border-bottom: 3px solid $primary-color;
 }
 
-.services-cont {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 0px;
-  width: 100vw;
-  height: 83vh;
-  background-color: $third-color;
-}
-
 .title {
   text-align: center;
   padding-bottom: 20px;
@@ -77,6 +67,16 @@ $fourth-color: #fcbdc3;
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0px;
+  width: 100%;
+  height: 100vh;
+}
+
+.grids-3 {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 0px;
   width: 100%;
@@ -115,8 +115,13 @@ $fourth-color: #fcbdc3;
 }
 
 @media (max-width: 450px) {
-   .services-cont {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
+   .grids-3 {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 0px;
+      width: 100%;
+      height: 100vh;
+    }
 }

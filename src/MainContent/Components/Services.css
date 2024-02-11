@@ -6,17 +6,9 @@
 
 .servizi-container {
   position: relative;
+  display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-}
-
-.servizi {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  padding:50px;
 }
 
 .servizi-container:hover {

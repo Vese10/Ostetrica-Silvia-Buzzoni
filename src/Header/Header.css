@@ -21,6 +21,11 @@
 
 .nav-logo {
   width: 100px;
+  cursor: pointer;
+}
+
+.ost-name {
+  cursor: pointer;
 }
 
 .left-section {

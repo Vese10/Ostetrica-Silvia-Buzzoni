@@ -17,8 +17,8 @@ function Header(){
     <header>
       <nav className={`nav ${isMenuOpen ? 'menu-open' : ''}`}>
         <div className="left-section">
-          <img src={ostLogo} className="nav-logo" alt="Ost logo" />
-          <p className="ost-name">Ostetrica <br/> Silvia <br/> Buzzoni</p>
+          <img src={ostLogo} className="nav-logo" alt="Ost logo" onClick={()=>handleClickHeader(0)}/>
+          <p className="ost-name" onClick={()=>handleClickHeader(0)}>Ostetrica <br/> Silvia <br/> Buzzoni</p>
         </div>
         <div className="right-section">
           <button className='hamburger-btn' id='hamburger-btn' onClick={handleMenuClick}>
