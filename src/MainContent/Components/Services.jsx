@@ -11,7 +11,8 @@ function Services({details, children}){
     <div className='servizi-container'>
       <p className='servizi' onClick={handleShowDiv}>{children}</p>
       {showDiv && (
-        <div className='div-show' onClick={handleShowDiv}>
+        <div className='div-show'>
+          <button className='btn-close' onClick={handleShowDiv}>X</button>
           <p className='p-show'>{details}</p>
         </div>
       )}
