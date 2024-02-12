@@ -1,21 +1,37 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import ostLogo from '../assets/ost-logo-back.png'
 import hamburgerMenu from '../assets/hamburger-menu.png'
 import './Header.css'
 
 function Header(){
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef(null);
+
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
   }
 
   const handleClickHeader = (heightPoint) => {
+    setIsMenuOpen(false);
     window.scrollTo(0, heightPoint)
   }
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
   
   return (
     <header>
-      <nav className={`nav ${isMenuOpen ? 'menu-open' : ''}`}>
+      <nav className={`nav ${isMenuOpen ? 'menu-open' : ''}`} ref={menuRef}>
         <div className="left-section">
           <img src={ostLogo} className="nav-logo" alt="Ost logo" onClick={()=>handleClickHeader(0)}/>
           <p className="ost-name" onClick={()=>handleClickHeader(0)}>Ostetrica <br/> Silvia <br/> Buzzoni</p>
