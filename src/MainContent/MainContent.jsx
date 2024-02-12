@@ -3,6 +3,7 @@ import backgroundImage2 from '../assets/second-page-backgrond-image.jpg'
 import './MainContent.css'
 import Card from './Components/Card'
 import Services from './Components/Services'
+import Dove from './Components/Dove'
 import Contatti from './Components/Contatti'
 
 function MainContent(){
@@ -43,6 +44,9 @@ function MainContent(){
         </div>
       </div>
       <div className='fourth-page'>
+        <Dove></Dove>
+      </div>
+      <div className='fifth-page'>
         <Contatti></Contatti>
       </div>
     </article>

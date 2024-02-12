@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dove-cont { 
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.img-dove {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  z-index: 1;
+}
+
+.luoghi {
+  display: flex;
+  padding: 20px;
+  background-color: #ffd9dd;
+  font-size: 20px;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  background-color: gray;
+}

@@ -38,7 +38,8 @@
 .first-page,
 .second-page,
 .third-page,
-.fourth-page {
+.fourth-page,
+.fifth-page {
   position: relative;
   display: flex;
   align-items: center;

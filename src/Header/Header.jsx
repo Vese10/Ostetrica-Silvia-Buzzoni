@@ -44,7 +44,8 @@ function Header(){
             <li onClick={()=>handleClickHeader(0)}>Home</li>
             <li onClick={()=>handleClickHeader(754)}>About</li>
             <li onClick={()=>handleClickHeader(1510)}>Servizi</li>
-            <li onClick={()=>handleClickHeader(2280)}>Contatti</li>
+            <li onClick={()=>handleClickHeader(2280)}>Dove mi trovo</li>
+            <li onClick={()=>handleClickHeader(3030)}>Contatti</li>
           </ul>
         </div>
       </nav>
