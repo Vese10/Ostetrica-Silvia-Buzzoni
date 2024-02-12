@@ -3,7 +3,7 @@ import backgroundImage2 from '../assets/second-page-backgrond-image.jpg'
 import './MainContent.css'
 import Card from './Components/Card'
 import Services from './Components/Services'
-import Prova from './Components/Contatti'
+import Contatti from './Components/Contatti'
 
 function MainContent(){
   return(
@@ -43,7 +43,7 @@ function MainContent(){
         </div>
       </div>
       <div className='fourth-page'>
-        <Prova></Prova>
+        <Contatti></Contatti>
       </div>
     </article>
   )
