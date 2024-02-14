@@ -2,9 +2,9 @@ import backgroundImage from '../assets/background-logo.png'
 import backgroundImage2 from '../assets/second-page-backgrond-image.jpg'
 import './MainContent.css'
 import Card from './Components/Card'
-import Services from './Components/Services'
-import Dove from './Components/Dove'
-import Contatti from './Components/Contatti'
+import Services from './Servizi/Services'
+import Dove from './DoveMiTrovo/Dove'
+import Contatti from './Contatti/Contatti'
 
 function MainContent(){
   return(
@@ -17,8 +17,8 @@ function MainContent(){
           <div className='cards'>
             <Card img='https://ostetricasilviabuzzoni.files.wordpress.com/2021/11/home-2.jpg' title='Chi sono' yOffset='754'></Card>
             <Card img='https://ostetricasilviabuzzoni.files.wordpress.com/2021/11/home-1-e1637973689125.jpg' title='Servizi' yOffset='1510'></Card>
-            <Card img='https://ostetricasilviabuzzoni.files.wordpress.com/2021/11/home-3.jpg' title='Dove mi trovo'></Card>
-            <Card img='https://ostetricasilviabuzzoni.files.wordpress.com/2021/11/image_editor_output_image1729886649-1637980771457.jpg' title='Contatti' yOffset='2280'></Card>
+            <Card img='https://ostetricasilviabuzzoni.files.wordpress.com/2021/11/home-3.jpg' title='Dove mi trovo' yOffset='2280'></Card>
+            <Card img='https://ostetricasilviabuzzoni.files.wordpress.com/2021/11/image_editor_output_image1729886649-1637980771457.jpg' title='Contatti' yOffset='3030'></Card>
           </div>
         </div>
       </div>
