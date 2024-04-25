@@ -33,8 +33,7 @@ function MainContent(){
         <div className='services-cont'>
           <div className='grids-3'>
             <img className='img-servizi' src='https://ostetricasilviabuzzoni.files.wordpress.com/2021/11/home-1-e1637973689125.jpg' alt='Pancia'></img>
-            <Services 
-            details='Il tuo pavimento pelvico ti ha accompagnata finora e ti accompagnerà sempre, nel corso della tua vita. Può diventare un alleato incredibile se solo impari a conoscerlo. I corsi di gruppo sulla percezione e l’ascolto del proprio pavimento pelvico sono l’occasione giusta per scoprire questa parte del tuo corpo. In caso di disfunzioni come incontinenza urinaria sotto sforzo (in occasione di tosse, starnuti, risate) inoltre, il percorso più indicato è individuale e personalizzato.'>Cura del Pavimento Pelvico</Services>
+            <Services>Cura del Pavimento Pelvico</Services>
             <Services>Support all'allattamento</Services>
             <Services>Gravidanza</Services>
             <Services>Accompagnamento in ospedale</Services>
