@@ -10,10 +10,7 @@ function MainContent(){
   return(
     <article className="main-page">
       <div className='first-page'>
-        <img src={backgroundImage} className='background-image' alt='Baby feets black and white' />
         <div className='presentation'>
-          <h1 className='title'>Ostetrica Silvia Buzzoni <br/> Libera Professionisa a Ferrara</h1>
-          <p className='sub-title'>Prendersi cura. Della donna, della madre, dei bimbi</p>
           <div className='cards'>
             <Card img='https://ostetricasilviabuzzoni.files.wordpress.com/2021/11/home-2.jpg' title='Chi sono' yOffset='754'></Card>
             <Card img='https://ostetricasilviabuzzoni.files.wordpress.com/2021/11/home-1-e1637973689125.jpg' title='Servizi' yOffset='1510'></Card>
