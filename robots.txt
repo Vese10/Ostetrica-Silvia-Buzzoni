@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /include/
+Disallow: /modules/
+
+Sitemap: https://ostetricasilviabuzzoni.it/sitemap.xml

@@ -1,0 +1,14 @@
+#RewriteEngine On
+#Options -MultiViews
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^([^\.]+)$ $1.php [NC,L]
+#ErrorDocument 404 /404.html
+####
+RewriteEngine On
+
+# Rimuovere l'estensione .php
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^.]+)$ $1.php [NC,L]
+
+# Gestire le pagine 404
+ErrorDocument 404 /404.html

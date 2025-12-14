@@ -1,0 +1,830 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  font-display: swap;
+}
+
+:root {
+  --bgCta: #eacac5;
+  --main: #5d5852;
+  --gradient2: #ffffff;
+}
+
+/* Regolo Digitale Interattivo */
+
+.wheel-container {
+  position: relative;
+  width: 65vh;
+  height: 65vh;
+}
+
+.outer-circle,
+.inner-circle {
+  position: absolute;
+}
+
+.outer-circle {
+  width: 100%;
+  height: 100%;
+}
+
+.inner-circle {
+  width: 74%;
+  height: 74%;
+  cursor: pointer;
+}
+
+.flatpickr-input {
+  color: var(--main);
+  text-align: center;
+}
+
+/* reCaptcha */
+
+.g-recaptcha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*MediaQuery*/
+/*schermo maxi */
+
+/* Navbar */
+#navbarNav {
+  overflow: hidden;
+}
+
+.navbar {
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--bgCta) !important;
+}
+
+.logo-immagine {
+  padding: 10px;
+}
+
+.logo-scritta {
+  padding: 10px;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-toggler.open .navbar-toggler-icon {
+  transform: rotate(90deg);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='rgba%2833, 37, 41, 0.75%29' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'/%3E%3Cline x1='6' y1='6' x2='18' y2='18'/%3E%3C/svg%3E");
+  /* Simbolo della X */
+}
+
+.navbar-cont {
+  background-color: var(--bgCta);
+}
+
+.navbar-brand img {
+  height: 70px;
+}
+
+.dropdown-menu .dropdown-item {
+  white-space: normal;
+}
+
+.dropdown-item {
+  color: var(--main);
+  font-size: 15px;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+.dropdown-menu {
+  width: max-content;
+  background-color: var(--bgCta);
+}
+
+.dropdown-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-info-contact {
+  width: 100%;
+}
+
+.btn-app {
+  background-color: var(--gradient2);
+  color: var(--main);
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 700;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-app:hover {
+  transform: scale(1.1);
+  color: var(--main);
+}
+
+/* First Section */
+
+.first-section {
+  min-height: 92vh;
+  background-image: url(../img/ostetrica-silvia-buzzoni-ambulatorio-desktop.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.presentazione {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--bgCta);
+  text-shadow: 2px 2px 4px black;
+}
+
+.btn-servizi {
+  background-color: var(--gradient2);
+  color: var(--main);
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: 700;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-servizi:hover {
+  transform: scale(1.1);
+  color: var(--main);
+}
+
+/* Second section */
+.second-section {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #ffffff, #eacac5);
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--main);
+  text-decoration: none;
+}
+
+.title-article {
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--main);
+  text-decoration: none;
+}
+
+.text {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--main);
+  text-align: left;
+  width: 90%;
+  text-decoration: none;
+}
+
+/* Third Section */
+.third-section {
+  min-height: max-content;
+  background: linear-gradient(180deg, #eacac5, #ffffff);
+  overflow: hidden;
+}
+
+.third-img {
+  border-radius: 20px;
+}
+
+.accordion-item {
+  border: none;
+  background-color: transparent;
+}
+
+.accordion-button {
+  color: #5d5852;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: transparent;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--main);
+  background-color: transparent;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.btn-accordion {
+  background-color: var(--main);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-accordion:hover {
+  transform: scale(1.1);
+  color: #ffffff;
+  background-color: var(--main);
+}
+
+/* Fourth Section */
+.fourth-section {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #ffffff, #eacac5);
+  overflow: hidden;
+}
+
+.latest-articles {
+  background: linear-gradient(180deg, #ffffff, #eacac5);
+  overflow: hidden;
+}
+
+.sub-title {
+  color: #5d5852;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pool-address {
+  color: #5d5852;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.domicilio-cont {
+  width: 100%;
+}
+
+.domicilio-img {
+  max-height: 30vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.studio-img {
+  max-height: 30vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.visita-grav-img {
+  max-height: 40vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.riabilitazione-img {
+  max-height: 40vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.allattamento-img {
+  max-height: 40vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.text-dove {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--main);
+  text-align: left;
+  width: 90%;
+}
+
+.maps-cont {
+  width: 90%;
+}
+
+.map {
+  border-radius: 20px;
+}
+
+.pool {
+  color: var(--main);
+}
+
+.address {
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.address:hover {
+  transform: scale(1.1);
+}
+
+/* Fifth Section */
+.fifth-section {
+  background: linear-gradient(180deg, #eacac5, #ffffff);
+  overflow: hidden;
+}
+
+.form-control {
+  border: 1px solid var(--main);
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--main);
+}
+
+.form-check-input {
+  border: 1px solid var(--main);
+}
+
+.form-check-label {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--main);
+  text-align: start;
+}
+
+/* Footer */
+
+.footer-cont {
+  background-color: var(--bgCta);
+  border-top: 5px solid var(--main);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.list-acc {
+  list-style-type: disc !important;
+}
+
+.policy {
+  padding-left: 0 !important;
+}
+
+.social-text {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--main);
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-text:hover {
+  transform: scale(1.1);
+}
+
+.footer-text {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--main);
+}
+
+/* Gravidanza Section */
+.gravidanza-section {
+  min-height: 90vh;
+  background: linear-gradient(180deg, #eacac5, #ffffff);
+  overflow: hidden;
+}
+
+.gravidanza-img-desktop {
+  position: absolute;
+  max-width: 100%;
+  left: 0;
+  bottom: 10px;
+  opacity: 0.5;
+}
+
+.gravidanza-img-mobile {
+  position: absolute;
+  max-width: 100%;
+  left: 0;
+  bottom: 10px;
+  opacity: 0.5;
+}
+
+
+.corso-pre-parto,
+.consulenza-ostetrica,
+.pavimento-pelvico-grav,
+.visita-in-gravidanza,
+.acquaticita-grav,
+.allattamento,
+.visita-post,
+.acquaticita-post,
+.svezzamento,
+.riabilitazione,
+.accompagnamento,
+.parto,
+.tampone {
+  height: 350px;
+  font-size: 50px;
+  font-weight: 700;
+  width: 350px;
+  color: var(--bgCta);
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
+}
+
+.corso-pre-parto {
+  background-image: url(../img/corso-preparto-ferrara.webp);
+  background-position: center;
+}
+
+.consulenza-ostetrica {
+  background-image: url(../img/consulenza-in-gravidanza-ferrara.webp);
+  background-position: calc(100% - -70px) center;
+}
+
+.pavimento-pelvico-grav {
+  background-image: url(../img/visita-pavimento-pelvico-ferrara.webp);
+  background-position: calc(100% - -70px) center;
+}
+
+.visita-in-gravidanza {
+  background-image: url(../img/visita-in-gravidanza-ferrara.webp);
+  background-position: calc(50% - -20px) center;
+}
+
+.acquaticita-grav {
+  background-image: url(../img/acquaticita-in-gravidanza-ferrara.webp);
+}
+
+.allattamento {
+  background-image: url(../img/allattamento.webp);
+  background-position: center;
+}
+
+.visita-post {
+  background-image: url(../img/visita-ostetrica-post-parto-ferrara.webp);
+  background-position: calc(50% - -40px) center;
+}
+
+.acquaticita-post {
+  background-image: url(../img/acquaticita-neonatale-ferrara.webp);
+  background-position: center;
+}
+
+.svezzamento {
+  background-image: url(../img/svezzamento-e-disostruzione-ferrara.webp);
+  background-position: center;
+}
+
+.riabilitazione {
+  background-image: url(../img/riabilitazione-pavimento-pelvico-ferrara.webp);
+  background-position: center;
+}
+
+.tampone {
+  background-image: url(../img/tampone-e-pap-test-ferrara.webp);
+  background-position: center;
+}
+
+.accompagnamento {
+  background-image: url(../img/accompangamento-in-sala-parto-ferrara-mobile.webp);
+  background-position: center;
+}
+
+.parto {
+  background-image: url(../img/parto-a-casa-ferrara.webp);
+  background-position: center;
+}
+
+
+.corso-pre-parto:hover,
+.consulenza-ostetrica:hover,
+.pavimento-pelvico-grav:hover,
+.visita-in-gravidanza:hover,
+.acquaticita-grav:hover,
+.allattamento:hover,
+.visita-post:hover,
+.acquaticita-post:hover,
+.svezzamento:hover,
+.riabilitazione:hover,
+.tampone:hover,
+.accompagnamento:hover,
+.parto:hover {
+  transform: scale(1.1);
+}
+
+/* Regolo Digitale */
+.regolo {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #eacac5, #ffffff);
+  overflow: hidden;
+}
+
+.regolo-btn {
+  background-color: var(--main);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 20px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.regolo-btn:hover {
+  transform: scale(1.1);
+  color: #ffffff;
+  background-color: var(--main);
+}
+
+.regolo-title {
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--main);
+}
+
+.regolo-text {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--main);
+}
+
+.regolo-result {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.vese {
+  font-style: italic;
+  text-decoration: underline;
+  color: #5d5852;
+}
+
+/* Storie di Nascita */
+.stories-section {
+  min-height: 30vh;
+  background: linear-gradient(180deg, #ffffff, #eacac5);
+  border-bottom: 5px solid var(--main);
+}
+
+.stories-section-pari {
+  min-height: 30vh;
+  background: linear-gradient(180deg, #eacac5, #ffffff);
+  border-bottom: 5px solid var(--main);
+}
+
+.img-stories {
+  max-width: 80% !important;
+}
+
+.articles-cont {
+  width: inherit !important;
+}
+
+/* Tablet */
+@media (min-width: 991px) {
+
+  .nav-link {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--main);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-link:hover {
+    transform: scale(1.1);
+  }
+
+  .accordion-button {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .accordion-button:hover {
+    transform: scale(1.05);
+  }
+
+  .accordion-button:not(.collapsed) {
+    transform: scale(1.05);
+  }
+
+  .accompagnamento,
+  .parto,
+  .riabilitazione,
+  .tampone {
+    width: 500px !important;
+    height: 500px !important;
+  }
+
+  .domicilio-img {
+    max-height: 35vh;
+  }
+
+  .studio-img {
+    max-height: 35vh;
+    object-position: 0 -250px;
+  }
+
+  .allattamento-img {
+    object-position: center calc(50% - -100px);
+  }
+
+  .riabilitazione-img {
+    object-position: center calc(50% - -200px);
+  }
+
+  .articles-img {
+    max-width: 70% !important;
+  }
+
+  .dropdown-menu.show {
+    position: fixed !important;
+  }
+
+  .dropdown-menu.sub.show {
+    position: absolute !important;
+  }
+}
+
+
+@media (max-width: 991px) {
+
+  /* Navbar */
+  .btn-item {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-app {
+    margin: 15px !important;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--main);
+  }
+
+  .dropdown-menu.show {
+    width: auto;
+  }
+
+  .img-scritta-mobile-cont {
+    width: 40%;
+  }
+
+  .img-scritta-mobile {
+    width: 100%;
+    height: auto !important;
+  }
+
+  /* First Section */
+  .first-section {
+    background-image: url(../img/ostetrica-silvia-buzzoni-ambulatorio-mobile.webp);
+    justify-content: space-around !important;
+  }
+
+  .presentazione {
+    font-size: 30px;
+  }
+
+  /* Second section */
+  .second-section {
+    background: var(--bgCta);
+  }
+
+
+  /* Third Section */
+  .third-section {
+    background: var(--bgCta);
+  }
+
+  .third-img {
+    border-radius: 0;
+  }
+
+  /* Fourth Section */
+  .fourth-section {
+    background: var(--bgCta);
+  }
+
+  .latest-articles {
+    background: var(--bgCta);
+  }
+
+  .text-dove {
+    width: 100%;
+  }
+
+  .maps-cont {
+    width: 100%;
+  }
+
+  .text {
+    margin-top: 10px;
+  }
+
+  .visit-cont {
+    padding-bottom: 30px !important;
+  }
+
+  /* Storie di Nascita */
+  .stories-section {
+    background: var(--bgCta);
+    padding: 25px 0 !important;
+  }
+
+  .stories-section-pari {
+    background: var(--bgCta);
+    padding: 25px 0 !important;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  /* Regolo Digitale Interattivo */
+
+  .wheel-container {
+    position: relative;
+    width: 40vh;
+    height: 40vh;
+  }
+
+  .first,
+  .third,
+  .fifth {
+    justify-content: start !important;
+  }
+
+  .second,
+  .fourth {
+    justify-content: end !important;
+  }
+
+}
+
+@media (max-width: 496px) {
+
+  .title {
+    font-size: 25px;
+  }
+
+  .title-article {
+    font-size: 20px;
+  }
+
+  /* Gravidanza Section */
+  .corso-pre-parto,
+  .consulenza-ostetrica,
+  .pavimento-pelvico-grav,
+  .visita-in-gravidanza,
+  .acquaticita-grav,
+  .allattamento,
+  .visita-post,
+  .acquaticita-post,
+  .svezzamento,
+  .riabilitazione,
+  .tampone,
+  .accompagnamento,
+  .parto {
+    height: 250px;
+    font-size: 25px;
+    font-weight: 700;
+    width: 250px;
+  }
+}
+
+/* Smartphone */
+@media(max-width: 390px) {
+
+  .informative {
+    flex-direction: column !important;
+  }
+
+}
